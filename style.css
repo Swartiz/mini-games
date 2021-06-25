@@ -45,8 +45,37 @@ nav {
     max-height: 75px;
 }
 
+@media screen and (max-width: 300px) {
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px;
+        position: sticky;
+        top: 0;
+        background-color: #444;
+        color: white;
+        font-size: 25px;
+        max-height: 75px;
+        height: 30px;
+    }
+}
+
 nav h1 {
     font-size: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    nav h1 {
+        font-size: 10px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    nav p {
+        font-size: 10px;
+    }
 }
 
 /* FIN DE LA BARRE DE NAVIGUATION */
@@ -69,9 +98,34 @@ nav h1 {
     transition: 1s !important;
 }
 
+@media screen and (max-width: 300px) {
+    .to-the-top {
+        background-color: #2e3033;
+        border-radius: 5px;
+        opacity: 0.5;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        cursor: pointer;
+        transition: 1s !important;
+    }
+}
+
 .to-the-top .btn {
     font-size: 22px;
     color: white;
+}
+
+@media screen and (max-width: 300px) {
+    .to-the-top .btn {
+        font-size: 12px;
+        color: white;
+    }
 }
 
 /* FIN DE TO THE TOP */
@@ -82,11 +136,25 @@ nav h1 {
     height: 474px;
 }
 
+@media screen and (max-width: 300px) {
+    .main {
+        height: 150px;
+    }
+}
+
 .btn-all {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 100px 600px;
+}
+
+@media screen and (max-width: 300px) {
+    .btn-all {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 40px;
+    }
 }
 
 .btn-all .btn {
@@ -101,6 +169,20 @@ nav h1 {
     transition: 0.2s !important;
 }
 
+@media screen and (max-width: 300px) {
+    .btn-all .btn {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 10px 10px 30px 1px;
+        cursor: pointer;
+        transition: 0.2s !important;
+    }
+}
+
 .btn-all .btn:hover {
     background-color: #f2f2f2;
     transition: 0.2s !important;
@@ -113,11 +195,28 @@ nav h1 {
     padding: 100px 500px;
 }
 
+@media screen and (max-width: 300px) {
+    .text-main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }    
+}
+
 .text-main h1 {
     font-size: 50px;
     align-self: center;
     margin-bottom: 50px;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 300px) {
+    .text-main h1 {
+        font-size: 15px;
+        align-self: center;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    } 
 }
 
 .text-main .choice-all {
@@ -128,6 +227,18 @@ nav h1 {
     padding: 0px 200px;
     margin-bottom: 50px;
     font-size: 40px;
+}
+
+@media screen and (max-width: 300px) {
+    .text-main .choice-all {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 0px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
 }
 
 .text-main button {
@@ -141,6 +252,21 @@ nav h1 {
     box-shadow: 5px 5px 20px 1px;
     cursor: pointer;
     transition: 0.2s !important;
+}
+
+@media screen and (max-width: 300px) {
+    .text-main button {
+        align-self: center;
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 5px 5px 20px 1px;
+        cursor: pointer;
+        transition: 0.2s !important;
+    }
 }
 
 .text-main button:hover {
@@ -158,13 +284,34 @@ nav h1 {
     margin-bottom: 100px;
 }
 
+@media screen and (max-width: 300px) {
+    .second {
+        padding: 10px 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
 .second h1 {
     margin-bottom: 25px;
     margin-top: 25px;
 }
 
+@media screen and (max-width: 300px) {
+    .second h1 {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+}
+
 .second p {
     font-size: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    .second p {
+        font-size: 10px;
+    }
 }
 
 .second button {
@@ -178,6 +325,20 @@ nav h1 {
     box-shadow: 10px 10px 30px 1px;
     cursor: pointer;
     transition: 0.2s !important;
+}
+
+@media screen and (max-width: 300px) {
+    .second button {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 10px 10px 30px 1px;
+        cursor: pointer;
+        transition: 0.2s !important;
+    }
 }
 
 .second button:hover {
@@ -194,6 +355,13 @@ footer {
     background-color: #444;
 }
 
+@media screen and (max-width: 300px) {
+    footer {
+        height: 300px;
+        background-color: #444;
+    }
+}
+
 footer .follow {
     display: flex;
     flex-direction: column;
@@ -201,10 +369,27 @@ footer .follow {
     padding-top: 50px;
 }
 
+@media screen and (max-width: 300px) {
+    footer .follow {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
 .follow h1 {
     color: white;
     text-transform: uppercase;
     font-size: 55px;
+}
+
+@media screen and (max-width: 300px) {
+    .follow h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
 }
 
 .follow h2 {
@@ -214,12 +399,31 @@ footer .follow {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 300px) {
+    .follow h2 {
+        color: #999;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
 form input {
     width: 350px;
     height: 45px;
     border: none;
     padding-left: 20px;
     font-size: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    form input {
+        width: 150px;
+        height: 25px;
+        border: none;
+        padding-left: 5px;
+        font-size: 7px;
+    }
 }
 
 form input:focus {
@@ -235,6 +439,17 @@ form button {
     font-size: 20px;
 }
 
+@media screen and (max-width: 300px) {
+    form button {
+        width: 50px;
+        height: 25px;
+        border: none;
+        background-color: #2e3033;
+        color: white;
+        font-size: 10px;
+    }
+}
+
 form button:hover {
     background-color: black;
 }
@@ -247,10 +462,28 @@ form button:hover {
     color: white;
 }
 
+@media screen and (max-width: 300px) {
+    .footer-lower {
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+    }
+}
+
 .footer-lower h1 {
     text-transform: uppercase;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 300px) {
+    .footer-lower h1 {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
 }
 
 .footer-lower .text-footer-lower {
@@ -262,6 +495,15 @@ form button:hover {
     text-decoration: none;
     color: #999;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 300px) {
+    .text-footer-lower a {
+        text-decoration: none;
+        color: #999;
+        margin-top: 10px;
+        font-size: 10px;
+    }
 }
 
 /* FIN DU FOOTER */
